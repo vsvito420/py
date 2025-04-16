@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python-Kurs für C++ Programmierer - Python-Kurs für C++ Programmierer</title>
+    
+    <!-- PyScript CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/pyscript.css" />
+    
+    <!-- PyScript JS -->
+    <script defer src="https://pyscript.net/releases/2025.3.1/pyscript.js"></script>
+    
+    <!-- Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    
+    <!-- Eigenes CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <!-- Eigenes JavaScript -->
+    <script defer src="/assets/js/pyscript-helper.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="wrapper">
+                <a class="site-title" href="/">Python-Kurs für C++ Programmierer</a>
+                <nav class="site-nav">
+                    <a href="/">Startseite</a>
+                    <a href="/grundlagen/">Grundlagen</a>
+                    <a href="/kontrollstrukturen/">Kontrollstrukturen</a>
+                    <a href="/funktionen/">Funktionen</a>
+                    <a href="/datenstrukturen/">Datenstrukturen</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="page-content">
+            <div class="wrapper">
+                <h1 class="page-title">Python-Kurs für C++ Programmierer</h1>
+                <h1 id="python-kurs-für-c-programmierer">Python-Kurs für C++ Programmierer</h1>
+
+<p>Willkommen zum interaktiven Python-Kurs! Dieser Kurs ist speziell für Lernende mit C++-Vorkenntnissen konzipiert und führt schrittweise in die Python-Programmierung ein.</p>
+
+<h2 id="kursstruktur">Kursstruktur</h2>
+
+<p>Der Kurs ist in folgende Module unterteilt:</p>
+
+<ol>
+  <li><a href="grundlagen/index.md"><strong>Grundlagen</strong></a>: Variablen, Datentypen, Operatoren, Ein-/Ausgabe</li>
+  <li><a href="kontrollstrukturen/index.md"><strong>Kontrollstrukturen</strong></a>: Bedingungen, Schleifen, List Comprehensions</li>
+  <li><a href="funktionen/index.md"><strong>Funktionen</strong></a>: Definition, Parameter, Rekursion</li>
+  <li><a href="datenstrukturen/index.md"><strong>Datenstrukturen</strong></a>: Listen, Dictionaries, Sets, Tuples</li>
+  <li><a href="objektorientierung/index.md"><strong>Objektorientierung</strong></a>: Klassen, Vererbung</li>
+  <li><a href="module_und_pakete/index.md"><strong>Module und Pakete</strong></a>: Eigene Module, Standardbibliothek</li>
+  <li><a href="dateien/index.md"><strong>Dateien</strong></a>: Lesen und Schreiben von Dateien</li>
+  <li><a href="ausnahmebehandlung/index.md"><strong>Ausnahmebehandlung</strong></a>: Try/Except</li>
+  <li><a href="projekte/index.md"><strong>Projekte</strong></a>: Praktische Anwendungen</li>
+</ol>
+
+<h2 id="interaktive-python-umgebung">Interaktive Python-Umgebung</h2>
+
+<p>Dieser Kurs enthält interaktive Python-Beispiele, die direkt im Browser ausgeführt werden können. Du kannst den Code bearbeiten und sofort das Ergebnis sehen, ohne Python auf deinem Computer installieren zu müssen.</p>
+
+<div class="pyscript-example">
+<h4>Beispiel: Hallo, Python!</h4>
+<pre><code class="language-python">
+# Dein erstes Python-Programm
+print("Hallo, Python!")
+
+# Probiere es aus - ändere den Text und führe den Code aus
+name = "Welt"
+print(f"Hallo, {name}!")
+</code></pre>
+</div>
+
+<h2 id="einrichtung-für-lokale-entwicklung">Einrichtung für lokale Entwicklung</h2>
+
+<p>Wenn du Python lokal auf deinem Computer verwenden möchtest, folge diesen Schritten:</p>
+
+<h3 id="installation-von-python">Installation von Python</h3>
+
+<ol>
+  <li>Lade Python von <a href="https://www.python.org/downloads/">python.org</a> herunter</li>
+  <li>Installiere Python mit der Option “Add Python to PATH”</li>
+  <li>Überprüfe die Installation mit <code class="language-plaintext highlighter-rouge">python --version</code> im Terminal</li>
+</ol>
+
+<h3 id="virtuelle-umgebung-einrichten">Virtuelle Umgebung einrichten</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Erstellen der virtuellen Umgebung</span>
+python <span class="nt">-m</span> venv .venv
+
+<span class="c"># Aktivieren der Umgebung</span>
+<span class="c"># Windows:</span>
+.venv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
+<span class="c"># macOS/Linux:</span>
+<span class="nb">source</span> .venv/bin/activate
+
+<span class="c"># Installation der benötigten Pakete</span>
+pip <span class="nb">install</span> <span class="nt">-r</span> requirements.txt
+</code></pre></div></div>
+
+<h3 id="empfohlene-vscode-erweiterungen">Empfohlene VSCode-Erweiterungen</h3>
+
+<ul>
+  <li>Python (Microsoft)</li>
+  <li>Pylint</li>
+  <li>Python Test Explorer</li>
+  <li>Python Docstring Generator</li>
+  <li>Python Indent</li>
+  <li>Jupyter</li>
+</ul>
+
+<h2 id="unterschiede-zu-c">Unterschiede zu C++</h2>
+
+<p>Dieser Kurs hebt die wichtigsten Unterschiede zwischen Python und C++ hervor:</p>
+
+<ul>
+  <li>Python verwendet Einrückungen statt geschweifter Klammern</li>
+  <li>Dynamische Typisierung statt statischer Typisierung
+    <ul>
+      <li>Python unterstützt jedoch optionale Typannotationen für bessere Lesbarkeit und Toolunterstützung</li>
+    </ul>
+  </li>
+  <li>Automatische Speicherverwaltung</li>
+  <li>Alles ist ein Objekt</li>
+  <li>Einfachere Syntax mit weniger Boilerplate-Code</li>
+</ul>
+
+<div class="cpp-comparison">
+<h4>Vergleich: Hallo Welt in C++ und Python</h4>
+
+<p>C++:</p>
+<pre><code class="language-cpp">
+#include &lt;iostream&gt;
+
+int main() {
+    std::cout &lt;&lt; "Hallo, Welt!" &lt;&lt; std::endl;
+    return 0;
+}
+</code></pre>
+
+<p>Python:</p>
+<pre><code class="language-python">
+print("Hallo, Welt!")
+</code></pre>
+</div>
+
+<h2 id="ressourcen">Ressourcen</h2>
+
+<ul>
+  <li><a href="https://docs.python.org/de/3/">Offizielle Python-Dokumentation</a></li>
+  <li><a href="https://realpython.com/python-vs-cpp/">Python für C++-Programmierer</a></li>
+  <li><a href="https://www.pythoncheatsheet.org/">Python Cheat Sheet</a></li>
+</ul>
+
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="wrapper">
+                <p>&copy; 2025 Python-Kurs für C++ Programmierer</p>
+                <p>
+                    <a href="https://github.com/vsvito420/py">GitHub Repository</a> |
+                    <a href="https://pyscript.net/">PyScript</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Grundlagen - Python-Kurs für C++ Programmierer</title>
+    
+    <!-- PyScript CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/pyscript.css" />
+    
+    <!-- PyScript JS -->
+    <script defer src="https://pyscript.net/releases/2025.3.1/pyscript.js"></script>
+    
+    <!-- Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    
+    <!-- Eigenes CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <!-- Eigenes JavaScript -->
+    <script defer src="/assets/js/pyscript-helper.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="wrapper">
+                <a class="site-title" href="/">Python-Kurs für C++ Programmierer</a>
+                <nav class="site-nav">
+                    <a href="/">Startseite</a>
+                    <a href="/grundlagen/">Grundlagen</a>
+                    <a href="/kontrollstrukturen/">Kontrollstrukturen</a>
+                    <a href="/funktionen/">Funktionen</a>
+                    <a href="/datenstrukturen/">Datenstrukturen</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="page-content">
+            <div class="wrapper">
+                <h1 class="page-title">Python Grundlagen</h1>
+                <h1 id="python-grundlagen">Python Grundlagen</h1>
+
+<p>In diesem Modul lernst du die grundlegenden Konzepte der Python-Programmierung kennen:
+Variablen, Datentypen, Operatoren und Ein-/Ausgabe.</p>
+
+<h2 id="inhaltsverzeichnis">Inhaltsverzeichnis</h2>
+
+<ul>
+  <li><a href="#variablen">Variablen</a></li>
+  <li><a href="#datentypen">Datentypen</a></li>
+  <li><a href="#operatoren">Operatoren</a></li>
+  <li><a href="#ein-und-ausgabe">Ein- und Ausgabe</a></li>
+</ul>
+
+<h2 id="variablen">Variablen</h2>
+
+<p>In Python werden Variablen ohne explizite Typdeklaration erstellt. 
+Der Typ einer Variablen wird automatisch anhand des zugewiesenen Wertes bestimmt.</p>
+
+<h3 id="vergleich-mit-c">Vergleich mit C++</h3>
+
+<p>In C++ müssen Variablen mit einem Typ deklariert werden:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">zahl</span> <span class="o">=</span> <span class="mi">42</span><span class="p">;</span>
+<span class="n">string</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"C++"</span><span class="p">;</span>
+<span class="kt">bool</span> <span class="n">istWahr</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>In Python entfällt die Typdeklaration:</p>
+
+<div class="pyscript-example">
+<pre><code class="language-python">
+# Variablen verschiedener Typen
+zahl = 42
+name = "Python"
+ist_wahr = True
+
+# Ausgabe der Variablen
+print(f"zahl: {zahl}, Typ: {type(zahl)}")
+print(f"name: {name}, Typ: {type(name)}")
+print(f"ist_wahr: {ist_wahr}, Typ: {type(ist_wahr)}")
+
+# Variablen können ihren Typ ändern
+zahl = "Jetzt bin ich ein String"
+print(f"zahl nach Änderung: {zahl}, Typ: {type(zahl)}")
+
+# Mehrfachzuweisung
+a, b, c = 1, 2, 3
+print(f"a: {a}, b: {b}, c: {c}")
+</code></pre>
+</div>
+
+<blockquote>
+  <p><strong>Hinweis:</strong> Python-Variablen sind dynamisch typisiert, d.h. der Typ kann sich während der Laufzeit ändern.
+Dies bietet Flexibilität, erfordert aber auch Sorgfalt, um unerwartete Typänderungen zu vermeiden.</p>
+</blockquote>
+
+<h3 id="übung-variablen">Übung: Variablen</h3>
+
+<p>Erstelle eigene Variablen verschiedener Typen und experimentiere mit Typänderungen:</p>
+
+<div class="pyscript-exercise">
+<pre><code class="language-python">
+# TODO: Erstelle eigene Variablen und gib sie aus
+# Beispiel:
+# meine_zahl = 100
+# print(f"Meine Zahl: {meine_zahl}")
+
+</code></pre>
+</div>
+
+<h2 id="datentypen">Datentypen</h2>
+
+<p>Python hat verschiedene eingebaute Datentypen. Die wichtigsten sind:</p>
+
+<ul>
+  <li><strong>Numerische Typen</strong>: int, float, complex</li>
+  <li><strong>Sequenztypen</strong>: str, list, tuple</li>
+  <li><strong>Mapping-Typ</strong>: dict</li>
+  <li><strong>Set-Typen</strong>: set, frozenset</li>
+  <li><strong>Boolesche Typen</strong>: bool</li>
+  <li><strong>None-Typ</strong>: NoneType</li>
+</ul>
+
+<h3 id="beispiel-numerische-datentypen">Beispiel: Numerische Datentypen</h3>
+
+<div class="pyscript-example">
+<pre><code class="language-python">
+# Integer (Ganzzahl)
+ganzzahl = 42
+print(f"ganzzahl: {ganzzahl}, Typ: {type(ganzzahl)}")
+
+# Float (Fließkommazahl)
+fliesskomma = 3.14
+print(f"fliesskomma: {fliesskomma}, Typ: {type(fliesskomma)}")
+
+# Complex (Komplexe Zahl)
+komplex_zahl = 1 + 2j
+print(f"komplex_zahl: {komplex_zahl}, Typ: {type(komplex_zahl)}")
+print(f"Realteil: {komplex_zahl.real}, Imaginärteil: {komplex_zahl.imag}")
+</code></pre>
+</div>
+
+<h3 id="beispiel-sequenz--und-container-typen">Beispiel: Sequenz- und Container-Typen</h3>
+
+<div class="pyscript-example">
+<pre><code class="language-python">
+# String (Zeichenkette)
+text = "Hallo Python"
+print(f"text: {text}, Typ: {type(text)}")
+
+# List (Liste)
+liste = [1, 2, 3, "vier", 5.0]
+print(f"liste: {liste}, Typ: {type(liste)}")
+
+# Tuple (Tupel) - unveränderlich
+tupel = (1, 2, 3, "vier", 5.0)
+print(f"tupel: {tupel}, Typ: {type(tupel)}")
+
+# Dictionary (Wörterbuch)
+woerterbuch = {"name": "Python", "version": 3.11, "ist_cool": True}
+print(f"woerterbuch: {woerterbuch}, Typ: {type(woerterbuch)}")
+
+# Set (Menge) - keine Duplikate
+menge = {1, 2, 3, 3, 4, 4, 5}  # Duplikate werden automatisch entfernt
+print(f"menge: {menge}, Typ: {type(menge)}")
+</code></pre>
+</div>
+
+<h3 id="typannotationen-in-python">Typannotationen in Python</h3>
+
+<p>Obwohl Python dynamisch typisiert ist, unterstützt es seit Python 3.5 optionale Typannotationen.
+Diese dienen der Dokumentation und können von Tools wie mypy zur statischen Typüberprüfung verwendet werden.</p>
+
+<div class="pyscript-example">
+<pre><code class="language-python">
+# Beispiel für Typannotationen
+def greet(name: str) -&gt; str:
+    return f"Hallo, {name}!"
+
+# Variablen mit Typannotationen
+alter: int = 25
+name: str = "Max"
+gewichte: list[float] = [65.5, 70.2, 68.7]
+
+print(greet(name))
+print(f"In 10 Jahren bist du {alter + 10} Jahre alt.")
+</code></pre>
+</div>
+
+<h3 id="übung-datentypen">Übung: Datentypen</h3>
+
+<p>Experimentiere mit verschiedenen Datentypen:</p>
+
+<div class="pyscript-exercise">
+<pre><code class="language-python">
+# TODO: Erstelle Variablen mit verschiedenen Datentypen und teste ihre Eigenschaften
+# Beispiel:
+# meine_liste = [1, 2, 3]
+# meine_liste.append(4)
+# print(meine_liste)
+
+</code></pre>
+</div>
+
+<h2 id="operatoren">Operatoren</h2>
+
+<p>Python unterstützt verschiedene Arten von Operatoren:</p>
+
+<h3 id="beispiel-arithmetische-operatoren">Beispiel: Arithmetische Operatoren</h3>
+
+<div class="pyscript-example">
+<pre><code class="language-python">
+# Addition, Subtraktion, Multiplikation, Division
+print(f"7 + 3 = {7 + 3}")
+print(f"7 - 3 = {7 - 3}")
+print(f"7 * 3 = {7 * 3}")
+print(f"7 / 3 = {7 / 3}")  # Fließkomma-Division
+
+# Ganzzahl-Division, Modulo, Potenz
+print(f"7 // 3 = {7 // 3}")  # Ganzzahl-Division (abrunden)
+print(f"7 % 3 = {7 % 3}")    # Modulo (Rest)
+print(f"2 ** 3 = {2 ** 3}")  # Potenz (2³)
+
+# Vorrang von Operatoren
+print(f"7 + 3 * 2 = {7 + 3 * 2}")      # Multiplikation vor Addition
+print(f"(7 + 3) * 2 = {(7 + 3) * 2}")  # Klammern haben Vorrang
+</code></pre>
+</div>
+
+<h3 id="beispiel-vergleichs--und-logische-operatoren">Beispiel: Vergleichs- und logische Operatoren</h3>
+
+<div class="pyscript-example">
+<pre><code class="language-python">
+# Vergleichsoperatoren
+print(f"5 &gt; 3: {5 &gt; 3}")
+print(f"5 &lt; 3: {5 &lt; 3}")
+print(f"5 &gt;= 5: {5 &gt;= 5}")
+print(f"5 &lt;= 4: {5 &lt;= 4}")
+print(f"5 == 5: {5 == 5}")
+print(f"5 != 5: {5 != 5}")
+
+# Logische Operatoren
+print(f"True and False: {True and False}")
+print(f"True or False: {True or False}")
+print(f"not True: {not True}")
+
+# Kombination von Operatoren
+x = 10
+print(f"5 &lt; x &lt; 15: {5 &lt; x &lt; 15}")  # Verkettete Vergleiche
+</code></pre>
+</div>
+
+<h3 id="übung-operatoren">Übung: Operatoren</h3>
+
+<p>Experimentiere mit verschiedenen Operatoren:</p>
+
+<div class="pyscript-exercise">
+<pre><code class="language-python">
+# TODO: Schreibe Ausdrücke mit verschiedenen Operatoren
+# Beispiel:
+# ergebnis = (10 + 5) * 2 / 3
+# print(f"Das Ergebnis ist: {ergebnis}")
+
+</code></pre>
+</div>
+
+<h2 id="ein--und-ausgabe">Ein- und Ausgabe</h2>
+
+<p>Python bietet einfache Möglichkeiten für Ein- und Ausgabe. Die Funktion <code class="language-plaintext highlighter-rouge">print()</code> wird für die Ausgabe verwendet,
+während <code class="language-plaintext highlighter-rouge">input()</code> für die Benutzereingabe zuständig ist.</p>
+
+<h3 id="beispiel-ausgabe-mit-print">Beispiel: Ausgabe mit print()</h3>
+
+<div class="pyscript-example">
+<pre><code class="language-python">
+# Einfache Ausgabe
+print("Hallo, Welt!")
+
+# Mehrere Werte ausgeben
+name = "Python"
+version = 3.11
+print("Programmiersprache:", name, "Version:", version)
+
+# Formatierte Ausgabe mit f-Strings (ab Python 3.6)
+print(f"Programmiersprache: {name}, Version: {version}")
+
+# Formatierte Ausgabe mit format()
+print("Programmiersprache: {}, Version: {}".format(name, version))
+
+# Ausgabe mit Trennzeichen und Endzeichen
+print("Eins", "Zwei", "Drei", sep=" - ", end=" &gt;&gt;&gt; ")
+print("Neue Zeile")
+</code></pre>
+</div>
+
+<blockquote>
+  <p><strong>Hinweis zu input() in PyScript:</strong> Die Funktion <code class="language-plaintext highlighter-rouge">input()</code> funktioniert in PyScript nicht wie in einer normalen Python-Umgebung.
+In einer lokalen Python-Installation würde sie so verwendet werden:</p>
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Eingabe vom Benutzer
+</span><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Wie heißt du? "</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Hallo, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s">!"</span><span class="p">)</span>
+</code></pre></div>  </div>
+  <p>In PyScript können wir stattdessen HTML-Elemente verwenden, um Benutzereingaben zu erhalten.</p>
+</blockquote>
+
+<h3 id="übung-formatierte-ausgabe">Übung: Formatierte Ausgabe</h3>
+
+<p>Experimentiere mit verschiedenen Ausgabeformaten:</p>
+
+<div class="pyscript-exercise">
+<pre><code class="language-python">
+# TODO: Erstelle formatierte Ausgaben mit verschiedenen Methoden
+# Beispiel:
+# name = "Max"
+# alter = 25
+# print(f"{name} ist {alter} Jahre alt.")
+
+</code></pre>
+</div>
+
+<h2 id="zusammenfassung">Zusammenfassung</h2>
+
+<p>In diesem Modul hast du die Grundlagen der Python-Programmierung kennengelernt:</p>
+
+<ul>
+  <li>Variablen werden ohne explizite Typdeklaration erstellt</li>
+  <li>Python hat verschiedene eingebaute Datentypen (int, float, str, list, dict, …)</li>
+  <li>Operatoren für arithmetische Berechnungen, Vergleiche und logische Operationen</li>
+  <li>Ein- und Ausgabe mit <code class="language-plaintext highlighter-rouge">input()</code> und <code class="language-plaintext highlighter-rouge">print()</code></li>
+</ul>
+
+<p>Im nächsten Modul werden wir uns mit <a href="../kontrollstrukturen/index.md">Kontrollstrukturen</a> beschäftigen.</p>
+
+<h3 id="abschlussübung">Abschlussübung</h3>
+
+<p>Schreibe ein kleines Programm, das verschiedene Konzepte aus diesem Modul kombiniert:</p>
+
+<div class="pyscript-exercise">
+<pre><code class="language-python">
+# TODO: Schreibe ein Programm, das:
+# 1. Verschiedene Variablentypen verwendet
+# 2. Arithmetische Operationen durchführt
+# 3. Formatierte Ausgaben erzeugt
+# 4. Typumwandlungen demonstriert
+
+</code></pre>
+</div>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="../index.md">← Zurück zur Übersicht</a></td>
+      <td><a href="../kontrollstrukturen/index.md">Weiter zu Kontrollstrukturen →</a></td>
+    </tr>
+  </tbody>
+</table>
+
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="wrapper">
+                <p>&copy; 2025 Python-Kurs für C++ Programmierer</p>
+                <p>
+                    <a href="https://github.com/vsvito420/py">GitHub Repository</a> |
+                    <a href="https://pyscript.net/">PyScript</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
