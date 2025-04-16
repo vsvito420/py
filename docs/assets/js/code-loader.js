@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
  */
 function loadPythonFile(filePath, targetElement) {
     // Korrigierter Pfad: Die Dateien befinden sich jetzt im Verzeichnis /py/anleitungen/
-    fetch(`/py/anleitungen/${filePath}`)
+    fetch(`/${filePath}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Fehler beim Laden der Datei: ${response.status}`);
@@ -37,10 +37,40 @@ function loadPythonFile(filePath, targetElement) {
             
             // PyScript-Elemente initialisieren
             initializePyScriptElements(targetElement);
+            
+            // Wenn Code-Execution initialisiert ist, füge Run-Buttons hinzu
+            if (window.codeExecutionInitialized) {
+                addRunButtonsToCodeBlocks();
+            }
         })
         .catch(error => {
-            targetElement.innerHTML = `<div class="error">Fehler beim Laden der Datei: ${error.message}</div>`;
-            console.error('Fehler beim Laden der Python-Datei:', error);
+            // Detailliertere Fehlermeldung
+            let errorMessage = `Fehler beim Laden der Datei: ${error.message}`;
+            
+            // Zusätzliche Informationen für 404-Fehler
+            if (error.message.includes('404')) {
+                errorMessage = `
+                    <strong>Datei nicht gefunden (404)</strong><br>
+                    Die Datei konnte nicht gefunden werden: <code>/${filePath}</code><br><br>
+                    
+                    <strong>Mögliche Ursachen:</strong>
+                    <ul>
+                        <li>Die Datei existiert nicht im angegebenen Pfad</li>
+                        <li>Der Pfad ist falsch geschrieben</li>
+                        <li>Die Verzeichnisstruktur stimmt nicht mit dem erwarteten Pfad überein</li>
+                    </ul>
+                    
+                    <strong>Überprüfen Sie:</strong>
+                    <ul>
+                        <li>Ob die Datei <code>${filePath}</code> im Verzeichnis <code>docs/anleitungen/</code> existiert</li>
+                        <li>Ob der Pfad in der Markdown-Datei korrekt ist</li>
+                        <li>Ob Sie den Server im richtigen Verzeichnis gestartet haben</li>
+                    </ul>
+                `;
+            }
+            
+            targetElement.innerHTML = `<div class="error">${errorMessage}</div>`;
+            console.error('Fehler beim Laden der Python-Datei:', error, 'Pfad:', `/${filePath}`);
         });
 }
 
@@ -72,7 +102,7 @@ function convertPythonToHTML(content, filePath) {
                     <pre><code class="language-python">${escapeHTML(section.content)}</code></pre>
                 </div>
                 <div class="interactive-code">
-                    <py-repl id="code-${index}">${section.content}</py-repl>
+                    <py-repl id="code-${index}" auto-generate="true">${section.content}</py-repl>
                 </div>
             </div>`;
         }

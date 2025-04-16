@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Kontrollstrukturen - Interaktiver Kurs</title>
+    
+    <!-- PyScript CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/pyscript.css" />
+    
+    <!-- PyScript JS -->
+    <script defer src="https://pyscript.net/releases/2025.3.1/pyscript.js"></script>
+    
+    <!-- Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Highlight code blocks
+            hljs.highlightAll();
+            
+            // Fix code formatting issues
+            document.querySelectorAll('pre code').forEach(function(block) {
+                // Preserve whitespace
+                block.style.whiteSpace = 'pre';
+            });
+        });
+    </script>
+    
+    <!-- Eigenes CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <!-- Eigenes JavaScript -->
+    <script defer src="../assets/js/pyscript-helper.js"></script>
+    <script defer src="../assets/js/code-loader.js"></script>
+    <script defer src="../assets/js/code-execution.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="wrapper">
+                <a class="site-title" href="../index.html">Python-Lernwebseite</a>
+                <nav class="site-nav">
+                    <a href="../index.html">Startseite</a>
+                    <a href="../grundlagen/index.html">Grundlagen</a>
+                    <a href="../kontrollstrukturen/index.html">Kontrollstrukturen</a>
+                    <a href="../funktionen/index.html">Funktionen</a>
+                    <a href="../datenstrukturen/index.html">Datenstrukturen</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="page-content">
+            <div class="wrapper">
+                <h1 class="page-title">Python Kontrollstrukturen</h1>
+                <div class="two-column-layout">
+                    <div class="left-column">
+                        <p>
+                            In diesem Modul lernst du die Kontrollstrukturen in Python kennen:
+                            Bedingungen, Schleifen und List Comprehensions.
+                        </p>
+                        
+                        <h2>Inhaltsverzeichnis</h2>
+                        <ul>
+                            <li><a href="#bedingte-anweisungen">Bedingte Anweisungen</a></li>
+                            <li><a href="#schleifen">Schleifen</a></li>
+                            <li><a href="#list-comprehensions">List Comprehensions</a></li>
+                        </ul>
+                        
+                        <h2 id="bedingte-anweisungen">Bedingte Anweisungen (if/else)</h2>
+                        <div class="code-loader" data-file="anleitungen/02_kontrollstrukturen/01_if_else.py"></div>
+                        
+                        <h2 id="schleifen">Schleifen (for/while)</h2>
+                        <div class="code-loader" data-file="anleitungen/02_kontrollstrukturen/02_schleifen.py"></div>
+                        
+                        <h2 id="list-comprehensions">List Comprehensions</h2>
+                        <div class="code-loader" data-file="anleitungen/02_kontrollstrukturen/03_listen_comprehension.py"></div>
+                        
+                        <h2>Zusammenfassung</h2>
+                        <p>
+                            In diesem Modul hast du die Kontrollstrukturen in Python kennengelernt:
+                        </p>
+                        <ul>
+                            <li>Bedingte Anweisungen mit <code>if</code>, <code>elif</code> und <code>else</code></li>
+                            <li>Schleifen mit <code>for</code> und <code>while</code></li>
+                            <li>List Comprehensions als elegante Alternative zu Schleifen</li>
+                        </ul>
+                        
+                        <p>
+                            Im nächsten Modul werden wir uns mit <a href="../funktionen/index.html">Funktionen</a> beschäftigen.
+                        </p>
+                        
+                        <hr>
+                        
+                        <p>
+                            <a href="../index.html">← Zurück zur Kursübersicht</a> |
+                            <a href="../funktionen/index.html">Weiter zu Funktionen →</a>
+                        </p>
+                    </div>
+                    <div class="right-column" id="code-execution-area">
+                        <div class="console-container">
+                            <h3>Code-Ausführung</h3>
+                            <div id="console-output" class="console-output">
+                                <p>Wähle einen Code-Block aus, um ihn hier auszuführen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="wrapper">
+                <p>&copy; 2025 Python-Lernwebseite</p>
+                <p>
+                    <a href="https://github.com/username/py">GitHub Repository</a> |
+                    <a href="https://pyscript.net/">PyScript</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

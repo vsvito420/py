@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python-Kurs für C++ Programmierer mit PyScript</title>
+    
+    <!-- PyScript CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/pyscript.css" />
+    
+    <!-- PyScript JS -->
+    <script defer src="https://pyscript.net/releases/2025.3.1/pyscript.js"></script>
+    
+    <!-- Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Highlight code blocks
+            hljs.highlightAll();
+            
+            // Fix code formatting issues
+            document.querySelectorAll('pre code').forEach(function(block) {
+                // Preserve whitespace
+                block.style.whiteSpace = 'pre';
+            });
+        });
+    </script>
+    
+    <!-- Eigenes CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <!-- Eigenes JavaScript -->
+    <script defer src="./assets/js/pyscript-helper.js"></script>
+    <script defer src="./assets/js/code-loader.js"></script>
+    <script defer src="./assets/js/code-execution.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="wrapper">
+                <a class="site-title" href="./index.html">Python-Lernwebseite</a>
+                <nav class="site-nav">
+                    <a href="./index.html">Startseite</a>
+                    <a href="./grundlagen/index.html">Grundlagen</a>
+                    <a href="./kontrollstrukturen/index.html">Kontrollstrukturen</a>
+                    <a href="./funktionen/index.html">Funktionen</a>
+                    <a href="./datenstrukturen/index.html">Datenstrukturen</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="page-content">
+            <div class="wrapper">
+                <h1 class="page-title">Python-Kurs für C++ Programmierer mit PyScript</h1>
+                
+                <p>
+                    Willkommen zum Python-Kurs! Dieser Kurs ist speziell für Lernende mit C++-Vorkenntnissen konzipiert
+                    und führt schrittweise in die Python-Programmierung ein. Das Besondere an diesem Kurs ist die
+                    Integration von <strong>PyScript</strong>, wodurch Python-Code direkt im Browser ausgeführt werden kann.
+                </p>
+                
+                <h2>Kursstruktur</h2>
+                
+                <p>Der Kurs ist in folgende Module unterteilt:</p>
+                
+                <div class="module-grid">
+                    <div class="module-card">
+                        <h3>1. Grundlagen</h3>
+                        <p>Variablen, Datentypen, Operatoren, Ein-/Ausgabe</p>
+                        <a href="./grundlagen/index.html" class="module-link">Zum Modul →</a>
+                    </div>
+                    
+                    <div class="module-card">
+                        <h3>2. Kontrollstrukturen</h3>
+                        <p>Bedingungen, Schleifen, List Comprehensions</p>
+                        <a href="./kontrollstrukturen/index.html" class="module-link">Zum Modul →</a>
+                    </div>
+                    
+                    <div class="module-card">
+                        <h3>3. Funktionen</h3>
+                        <p>Definition, Parameter, Rekursion</p>
+                        <a href="./funktionen/index.html" class="module-link">Zum Modul →</a>
+                    </div>
+                    
+                    <div class="module-card">
+                        <h3>4. Datenstrukturen</h3>
+                        <p>Listen, Dictionaries, Sets, Tuples</p>
+                        <a href="./datenstrukturen/index.html" class="module-link">Zum Modul →</a>
+                    </div>
+                    
+                    <div class="module-card">
+                        <h3>5. Objektorientierung</h3>
+                        <p>Klassen, Vererbung</p>
+                        <a href="./objektorientierung/index.html" class="module-link">Zum Modul →</a>
+                    </div>
+                    
+                    <div class="module-card">
+                        <h3>6. Module und Pakete</h3>
+                        <p>Eigene Module, Standardbibliothek</p>
+                        <a href="./module_und_pakete/index.html" class="module-link">Zum Modul →</a>
+                    </div>
+                    
+                    <div class="module-card">
+                        <h3>7. Dateien</h3>
+                        <p>Lesen und Schreiben von Dateien</p>
+                        <a href="./dateien/index.html" class="module-link">Zum Modul →</a>
+                    </div>
+                    
+                    <div class="module-card">
+                        <h3>8. Ausnahmebehandlung</h3>
+                        <p>Try/Except</p>
+                        <a href="./ausnahmebehandlung/index.html" class="module-link">Zum Modul →</a>
+                    </div>
+                    
+                    <div class="module-card">
+                        <h3>9. Projekte</h3>
+                        <p>Praktische Anwendungen</p>
+                        <a href="./projekte/index.html" class="module-link">Zum Modul →</a>
+                    </div>
+                </div>
+                
+                <h2>Interaktive Python-Umgebung mit PyScript</h2>
+                
+                <p>
+                    Dieser Kurs enthält eine interaktive Webversion mit PyScript-Integration, die es ermöglicht,
+                    Python-Code direkt im Browser auszuführen.
+                </p>
+                
+                <h3>Vorteile der PyScript-Integration:</h3>
+                
+                <ul>
+                    <li>Python-Code direkt im Browser ausführen, ohne Installation</li>
+                    <li>Interaktive Beispiele und Übungen mit sofortigem Feedback</li>
+                    <li>Nahtlose Integration von Erklärungen und ausführbarem Code</li>
+                    <li>Zugänglich von jedem Gerät mit einem modernen Webbrowser</li>
+                </ul>
+                
+                <h2>Beispiel: Fibonacci-Folge</h2>
+                
+                <p>
+                    Hier ist ein Beispiel für die Berechnung der Fibonacci-Folge in Python:
+                </p>
+                
+                <div class="code-loader" data-file="anleitungen/beispiel_code/fibonacci.py"></div>
+                
+                <h2>Lokale Entwicklung</h2>
+                
+                <h3>Voraussetzungen</h3>
+                
+                <ul>
+                    <li>Python 3.8 oder höher</li>
+                    <li>Git</li>
+                    <li>Visual Studio Code (empfohlen)</li>
+                </ul>
+                
+                <h3>Lokales Testen der Website</h3>
+                
+                <p>Um die Website lokal zu testen:</p>
+                
+                <pre><code>cd docs
+python -m http.server 4000</code></pre>
+                
+                <p>Die Website ist dann unter <a href="http://localhost:4000">http://localhost:4000</a> verfügbar.</p>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="wrapper">
+                <p>&copy; 2025 Python-Lernwebseite</p>
+                <p>
+                    <a href="https://github.com/username/py">GitHub Repository</a> |
+                    <a href="https://pyscript.net/">PyScript</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

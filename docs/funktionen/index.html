@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Funktionen - Interaktiver Kurs</title>
+    
+    <!-- PyScript CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/pyscript.css" />
+    
+    <!-- PyScript JS -->
+    <script defer src="https://pyscript.net/releases/2025.3.1/pyscript.js"></script>
+    
+    <!-- Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Highlight code blocks
+            hljs.highlightAll();
+            
+            // Fix code formatting issues
+            document.querySelectorAll('pre code').forEach(function(block) {
+                // Preserve whitespace
+                block.style.whiteSpace = 'pre';
+            });
+        });
+    </script>
+    
+    <!-- Eigenes CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <!-- Eigenes JavaScript -->
+    <script defer src="../assets/js/pyscript-helper.js"></script>
+    <script defer src="../assets/js/code-loader.js"></script>
+    <script defer src="../assets/js/code-execution.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="wrapper">
+                <a class="site-title" href="../index.html">Python-Lernwebseite</a>
+                <nav class="site-nav">
+                    <a href="../index.html">Startseite</a>
+                    <a href="../grundlagen/index.html">Grundlagen</a>
+                    <a href="../kontrollstrukturen/index.html">Kontrollstrukturen</a>
+                    <a href="../funktionen/index.html">Funktionen</a>
+                    <a href="../datenstrukturen/index.html">Datenstrukturen</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="page-content">
+            <div class="wrapper">
+                <h1 class="page-title">Python Funktionen</h1>
+                <div class="two-column-layout">
+                    <div class="left-column">
+                        <p>
+                            In diesem Modul lernst du die Grundlagen von Funktionen in Python kennen:
+                            Definition, Parameter und Rekursion.
+                        </p>
+                        
+                        <h2>Inhaltsverzeichnis</h2>
+                        <ul>
+                            <li><a href="#funktionsgrundlagen">Funktionsgrundlagen</a></li>
+                            <li><a href="#parameter-und-argumente">Parameter und Argumente</a></li>
+                            <li><a href="#rekursion">Rekursion</a></li>
+                        </ul>
+                        
+                        <h2 id="funktionsgrundlagen">Funktionsgrundlagen</h2>
+                        <div class="code-loader" data-file="anleitungen/03_funktionen/01_funktionen_grundlagen.py"></div>
+                        
+                        <h2 id="parameter-und-argumente">Parameter und Argumente</h2>
+                        <div class="code-loader" data-file="anleitungen/03_funktionen/02_parameter.py"></div>
+                        
+                        <h2 id="rekursion">Rekursion</h2>
+                        <div class="code-loader" data-file="anleitungen/03_funktionen/03_rekursion.py"></div>
+                        
+                        <h2>Zusammenfassung</h2>
+                        <p>
+                            In diesem Modul hast du die Grundlagen von Funktionen in Python kennengelernt:
+                        </p>
+                        <ul>
+                            <li>Definition von Funktionen mit <code>def</code></li>
+                            <li>Parameter und Rückgabewerte</li>
+                            <li>Verschiedene Arten von Parametern (Positions-, Schlüsselwort-, Default-Parameter)</li>
+                            <li>Rekursive Funktionen</li>
+                        </ul>
+                        
+                        <p>
+                            Im nächsten Modul werden wir uns mit <a href="../datenstrukturen/index.html">Datenstrukturen</a> beschäftigen.
+                        </p>
+                        
+                        <hr>
+                        
+                        <p>
+                            <a href="../index.html">← Zurück zur Kursübersicht</a> |
+                            <a href="../datenstrukturen/index.html">Weiter zu Datenstrukturen →</a>
+                        </p>
+                    </div>
+                    <div class="right-column" id="code-execution-area">
+                        <div class="console-container">
+                            <h3>Code-Ausführung</h3>
+                            <div id="console-output" class="console-output">
+                                <p>Wähle einen Code-Block aus, um ihn hier auszuführen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="wrapper">
+                <p>&copy; 2025 Python-Lernwebseite</p>
+                <p>
+                    <a href="https://github.com/username/py">GitHub Repository</a> |
+                    <a href="https://pyscript.net/">PyScript</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

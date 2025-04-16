@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Datenstrukturen - Interaktiver Kurs</title>
+    
+    <!-- PyScript CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/pyscript.css" />
+    
+    <!-- PyScript JS -->
+    <script defer src="https://pyscript.net/releases/2025.3.1/pyscript.js"></script>
+    
+    <!-- Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Highlight code blocks
+            hljs.highlightAll();
+            
+            // Fix code formatting issues
+            document.querySelectorAll('pre code').forEach(function(block) {
+                // Preserve whitespace
+                block.style.whiteSpace = 'pre';
+            });
+        });
+    </script>
+    
+    <!-- Eigenes CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <!-- Eigenes JavaScript -->
+    <script defer src="../assets/js/pyscript-helper.js"></script>
+    <script defer src="../assets/js/code-loader.js"></script>
+    <script defer src="../assets/js/code-execution.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="wrapper">
+                <a class="site-title" href="../index.html">Python-Lernwebseite</a>
+                <nav class="site-nav">
+                    <a href="../index.html">Startseite</a>
+                    <a href="../grundlagen/index.html">Grundlagen</a>
+                    <a href="../kontrollstrukturen/index.html">Kontrollstrukturen</a>
+                    <a href="../funktionen/index.html">Funktionen</a>
+                    <a href="../datenstrukturen/index.html">Datenstrukturen</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="page-content">
+            <div class="wrapper">
+                <h1 class="page-title">Python Datenstrukturen</h1>
+                <div class="two-column-layout">
+                    <div class="left-column">
+                        <p>
+                            In diesem Modul lernst du die wichtigsten Datenstrukturen in Python kennen:
+                            Listen, Dictionaries, Sets und Tuples.
+                        </p>
+                        
+                        <h2>Inhaltsverzeichnis</h2>
+                        <ul>
+                            <li><a href="#listen">Listen</a></li>
+                            <li><a href="#dictionaries">Dictionaries</a></li>
+                            <li><a href="#sets">Sets</a></li>
+                            <li><a href="#tuples">Tuples</a></li>
+                        </ul>
+                        
+                        <h2 id="listen">Listen</h2>
+                        <div class="code-loader" data-file="anleitungen/04_datenstrukturen/01_listen.py"></div>
+                        
+                        <h2 id="dictionaries">Dictionaries</h2>
+                        <div class="code-loader" data-file="anleitungen/04_datenstrukturen/02_dictionaries.py"></div>
+                        
+                        <h2 id="sets">Sets</h2>
+                        <div class="code-loader" data-file="anleitungen/04_datenstrukturen/03_sets.py"></div>
+                        
+                        <h2 id="tuples">Tuples</h2>
+                        <div class="code-loader" data-file="anleitungen/04_datenstrukturen/04_tuples.py"></div>
+                        
+                        <h2>Zusammenfassung</h2>
+                        <p>
+                            In diesem Modul hast du die wichtigsten Datenstrukturen in Python kennengelernt:
+                        </p>
+                        <ul>
+                            <li>Listen: Geordnete, veränderbare Sammlungen von Elementen</li>
+                            <li>Dictionaries: Schlüssel-Wert-Paare für schnellen Zugriff</li>
+                            <li>Sets: Ungeordnete Sammlungen eindeutiger Elemente</li>
+                            <li>Tuples: Unveränderbare geordnete Sammlungen</li>
+                        </ul>
+                        
+                        <p>
+                            Im nächsten Modul werden wir uns mit <a href="../objektorientierung/index.html">Objektorientierung</a> beschäftigen.
+                        </p>
+                        
+                        <hr>
+                        
+                        <p>
+                            <a href="../index.html">← Zurück zur Kursübersicht</a> |
+                            <a href="../objektorientierung/index.html">Weiter zu Objektorientierung →</a>
+                        </p>
+                    </div>
+                    <div class="right-column" id="code-execution-area">
+                        <div class="console-container">
+                            <h3>Code-Ausführung</h3>
+                            <div id="console-output" class="console-output">
+                                <p>Wähle einen Code-Block aus, um ihn hier auszuführen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="wrapper">
+                <p>&copy; 2025 Python-Lernwebseite</p>
+                <p>
+                    <a href="https://github.com/username/py">GitHub Repository</a> |
+                    <a href="https://pyscript.net/">PyScript</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -33,6 +33,7 @@
     <!-- Eigenes JavaScript -->
     <script defer src="{{ '/assets/js/pyscript-helper.js' | relative_url }}"></script>
     <script defer src="{{ '/assets/js/code-loader.js' | relative_url }}"></script>
+    <script defer src="{{ '/assets/js/code-execution.js' | relative_url }}"></script>
 </head>
 <body>
     <div class="container">
@@ -52,7 +53,19 @@
         <main class="page-content">
             <div class="wrapper">
                 <h1 class="page-title">{{ page.title }}</h1>
-                {{ content }}
+                <div class="two-column-layout">
+                    <div class="left-column">
+                        {{ content }}
+                    </div>
+                    <div class="right-column" id="code-execution-area">
+                        <div class="console-container">
+                            <h3>Code-Ausführung</h3>
+                            <div id="console-output" class="console-output">
+                                <p>Wähle einen Code-Block aus, um ihn hier auszuführen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
 
