@@ -174,11 +174,76 @@ print(f"isinstance('Text', str): {isinstance('Text', str)}")
 print(f"type(3.14) == float: {type(3.14) == float}")
 print()
 
+# ===== Typannotationen (Type Hints) =====
+print("=== Typannotationen (Type Hints) ===")
+
+# In C++: Typen sind obligatorisch
+# int zahl = 42;
+# std::string text = "Hallo";
+
+# In Python: Typen sind optional, aber können mit Annotationen angegeben werden
+from typing import List, Dict, Tuple, Set, Optional, Union, Any
+
+# Einfache Typannotationen
+name: str = "Max"
+alter: int = 30
+größe: float = 1.80
+ist_aktiv: bool = True
+
+print(f"name: {name} (Typ: {type(name).__name__})")
+print(f"alter: {alter} (Typ: {type(alter).__name__})")
+print(f"größe: {größe} (Typ: {type(größe).__name__})")
+print(f"ist_aktiv: {ist_aktiv} (Typ: {type(ist_aktiv).__name__})")
+
+# Komplexere Typannotationen
+zahlen_liste: List[int] = [1, 2, 3, 4, 5]
+namen_tuple: Tuple[str, str, str] = ("Max", "Anna", "Tim")
+personen_dict: Dict[str, int] = {"Max": 30, "Anna": 25, "Tim": 35}
+zahlen_set: Set[int] = {1, 2, 3, 4, 5}
+
+print(f"zahlen_liste: {zahlen_liste} (Typ: List[int])")
+print(f"namen_tuple: {namen_tuple} (Typ: Tuple[str, str, str])")
+print(f"personen_dict: {personen_dict} (Typ: Dict[str, int])")
+print(f"zahlen_set: {zahlen_set} (Typ: Set[int])")
+
+# Optional und Union
+optional_wert: Optional[str] = None  # Kann str oder None sein
+union_wert: Union[int, str] = "Hallo"  # Kann int oder str sein
+
+print(f"optional_wert: {optional_wert} (Typ: Optional[str])")
+print(f"union_wert: {union_wert} (Typ: Union[int, str])")
+
+# Typannotationen in Funktionen
+def grüße(name: str) -> str:
+    """Gibt einen Gruß zurück."""
+    return f"Hallo, {name}!"
+
+def addiere(a: int, b: int) -> int:
+    """Addiert zwei Zahlen."""
+    return a + b
+
+print(f"grüße('Max'): {grüße('Max')}")
+print(f"addiere(5, 3): {addiere(5, 3)}")
+
+# Wichtig: Typannotationen sind nur Hinweise!
+# Python überprüft die Typen nicht zur Laufzeit
+text_als_zahl: int = "Dies ist kein Integer"  # Funktioniert trotz falscher Annotation
+print(f"text_als_zahl: {text_als_zahl} (Deklariert als int, ist aber {type(text_als_zahl).__name__})")
+
+# Typannotationen werden verwendet für:
+# 1. Dokumentation (bessere Lesbarkeit)
+# 2. IDE-Unterstützung (Autovervollständigung, Fehlerprüfung)
+# 3. Statische Typprüfung mit Tools wie mypy
+
+print("Hinweis: Für fortgeschrittene Typannotationen siehe auch 03_funktionen/02_parameter.py")
+print()
+
 # ===== ÜBUNG =====
 print("=== ÜBUNG ===")
 print("1. Erstelle eine Liste mit verschiedenen Datentypen")
 print("2. Erstelle ein Dictionary mit mindestens 3 Einträgen")
 print("3. Führe Set-Operationen mit eigenen Mengen durch")
+print("4. Definiere eine Funktion mit Typannotationen")
 
 # TODO: Schreibe deinen Code hier
 # meine_liste = ...

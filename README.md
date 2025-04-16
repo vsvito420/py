@@ -21,6 +21,7 @@ Der Kurs ist in folgende Module unterteilt:
 ### Grundlagen
 - [Variablen](01_grundlagen/01_variablen.py)
 - [Datentypen](01_grundlagen/02_datentypen.py)
+  - [Typannotationen (Type Hints)](01_grundlagen/02_datentypen.py#L177-L230)
 - [Operatoren](01_grundlagen/03_operatoren.py)
 - [Ein-/Ausgabe](01_grundlagen/04_eingabe_ausgabe.py)
 
@@ -101,6 +102,7 @@ Dieser Kurs hebt die wichtigsten Unterschiede zwischen Python und C++ hervor:
 
 - Python verwendet Einrückungen statt geschweifter Klammern
 - Dynamische Typisierung statt statischer Typisierung
+  - Python unterstützt jedoch optionale [Typannotationen](01_grundlagen/02_datentypen.py#L210-L230) für bessere Lesbarkeit und Toolunterstützung
 - Automatische Speicherverwaltung
 - Alles ist ein Objekt
 - Einfachere Syntax mit weniger Boilerplate-Code

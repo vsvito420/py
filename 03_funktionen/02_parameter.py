@@ -206,6 +206,7 @@ print()
 
 # ===== Typhinweise für Parameter =====
 print("=== Typhinweise für Parameter ===")
+print("(Grundlagen zu Typannotationen finden Sie in 01_grundlagen/02_datentypen.py)")
 
 from typing import List, Dict, Optional, Union, Any
 
