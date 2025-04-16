@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code-Loader Test</title>
+    
+    <!-- PyScript CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/pyscript.css" />
+    
+    <!-- PyScript JS -->
+    <script defer src="https://pyscript.net/releases/2025.3.1/pyscript.js"></script>
+    
+    <!-- Code-Loader JS -->
+    <script src="assets/js/code-loader.js"></script>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1, h2, h3 {
+            color: #333;
+        }
+        
+        .code-example {
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .exercise {
+            background-color: #e6f7ff;
+            border-left: 4px solid #1890ff;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .note {
+            background-color: #fffbe6;
+            border-left: 4px solid #faad14;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        py-repl {
+            min-height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Code-Loader Test</h1>
+    
+    <p>Diese Seite testet den Code-Loader mit korrigierten Pfaden.</p>
+    
+    <h2>Test 1: Variablen (01_grundlagen/01_variablen.py)</h2>
+    <div class="code-loader" data-file="01_grundlagen/01_variablen.py"></div>
+    
+    <h2>Test 2: Datentypen (01_grundlagen/02_datentypen.py)</h2>
+    <div class="code-loader" data-file="01_grundlagen/02_datentypen.py"></div>
+    
+    <p><a href="index.html">Zurück zur Hauptseite</a></p>
+</body>
+</html>

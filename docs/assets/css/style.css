@@ -138,6 +138,7 @@ pre {
     font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
     font-size: 85%;
     line-height: 1.45;
+    white-space: pre;
 }
 
 code {
@@ -151,6 +152,69 @@ code {
 pre code {
     background-color: transparent;
     padding: 0;
+    white-space: pre;
+}
+
+/* PyScript-spezifische Code-Formatierung */
+py-repl {
+    white-space: pre;
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+.py-repl-box {
+    white-space: pre;
+}
+
+.py-repl-editor {
+    white-space: pre;
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+/* Code-Loader Stile */
+.code-loader {
+    margin-bottom: 30px;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.explanation {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+.explanation h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #24292e;
+}
+
+.explanation p {
+    margin-bottom: 10px;
+}
+
+.code-block {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+.code-block:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.interactive-code {
+    padding: 15px;
+    background-color: #f6f8fa;
+}
+
+.error {
+    padding: 15px;
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
 }
 
 /* Responsive Design */

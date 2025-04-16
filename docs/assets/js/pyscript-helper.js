@@ -48,8 +48,11 @@ function convertPyScriptBlocks(className, prefix) {
         const codeBlock = block.querySelector('pre code');
         if (!codeBlock) return;
         
-        // Extrahiere den Code und entferne führende/nachfolgende Leerzeichen
-        const code = codeBlock.textContent.trim();
+        // Extrahiere den Code und bewahre die Formatierung
+        let code = codeBlock.textContent;
+        
+        // Entferne nur führende/nachfolgende Leerzeilen, aber bewahre Einrückungen
+        code = code.replace(/^\s*\n/, '').replace(/\n\s*$/, '');
         
         // Erstelle eine eindeutige ID für das py-repl Element
         const id = `${prefix}-${index}`;
@@ -57,7 +60,12 @@ function convertPyScriptBlocks(className, prefix) {
         // Erstelle das py-repl Element
         const pyRepl = document.createElement('py-repl');
         pyRepl.id = id;
+        
+        // Setze den Code mit korrekter Formatierung
         pyRepl.textContent = code;
+        
+        // Stelle sicher, dass die Formatierung erhalten bleibt
+        pyRepl.style.whiteSpace = 'pre';
         pyRepl.setAttribute('auto-generate', 'true');
         
         // Extrahiere den Titel, falls vorhanden
