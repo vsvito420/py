@@ -18,7 +18,7 @@ Hier kannst du die originalen Python-Dateien direkt auf der Website anschauen un
 
 ### Dateien lesen und schreiben
 
-<div class="code-loader" data-file="07_dateien/01_lesen_schreiben.py"></div>
+<div class="code-loader" data-file="anleitungen/07_dateien/01_lesen_schreiben.py"></div>
 
 ## Zusammenfassung
 

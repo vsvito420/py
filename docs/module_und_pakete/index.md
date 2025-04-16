@@ -19,11 +19,11 @@ Hier kannst du die originalen Python-Dateien direkt auf der Website anschauen un
 
 ### Eigene Module
 
-<div class="code-loader" data-file="06_module_und_pakete/01_eigene_module.py"></div>
+<div class="code-loader" data-file="anleitungen/06_module_und_pakete/01_eigene_module.py"></div>
 
 ### Standardbibliothek
 
-<div class="code-loader" data-file="06_module_und_pakete/02_standard_bibliothek.py"></div>
+<div class="code-loader" data-file="anleitungen/06_module_und_pakete/02_standard_bibliothek.py"></div>
 
 ## Zusammenfassung
 

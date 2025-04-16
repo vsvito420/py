@@ -20,15 +20,15 @@ Hier kannst du die originalen Python-Dateien direkt auf der Website anschauen un
 
 ### Funktionsgrundlagen
 
-<div class="code-loader" data-file="03_funktionen/01_funktionen_grundlagen.py"></div>
+<div class="code-loader" data-file="anleitungen/03_funktionen/01_funktionen_grundlagen.py"></div>
 
 ### Parameter und Argumente
 
-<div class="code-loader" data-file="03_funktionen/02_parameter.py"></div>
+<div class="code-loader" data-file="anleitungen/03_funktionen/02_parameter.py"></div>
 
 ### Rekursion
 
-<div class="code-loader" data-file="03_funktionen/03_rekursion.py"></div>
+<div class="code-loader" data-file="anleitungen/03_funktionen/03_rekursion.py"></div>
 
 ## Zusammenfassung
 

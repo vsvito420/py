@@ -19,11 +19,11 @@ Hier kannst du die originalen Python-Dateien direkt auf der Website anschauen un
 
 ### Klassen und Objekte
 
-<div class="code-loader" data-file="05_objektorientierung/01_klassen.py"></div>
+<div class="code-loader" data-file="anleitungen/05_objektorientierung/01_klassen.py"></div>
 
 ### Vererbung
 
-<div class="code-loader" data-file="05_objektorientierung/02_vererbung.py"></div>
+<div class="code-loader" data-file="anleitungen/05_objektorientierung/02_vererbung.py"></div>
 
 ## Zusammenfassung
 

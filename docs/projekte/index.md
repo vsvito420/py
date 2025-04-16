@@ -18,11 +18,11 @@ Hier kannst du die originalen Python-Dateien direkt auf der Website anschauen un
 
 ### README mit Projektideen
 
-<div class="code-loader" data-file="09_projekte/README.md"></div>
+<div class="code-loader" data-file="anleitungen/09_projekte/README.md"></div>
 
 ### Beispielprojekt: Fibonacci
 
-<div class="code-loader" data-file="beispiel_code/fibonacci.py"></div>
+<div class="code-loader" data-file="anleitungen/beispiel_code/fibonacci.py"></div>
 
 ## Projektideen
 

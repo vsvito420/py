@@ -20,15 +20,15 @@ Hier kannst du die originalen Python-Dateien direkt auf der Website anschauen un
 
 ### Bedingte Anweisungen (if/else)
 
-<div class="code-loader" data-file="02_kontrollstrukturen/01_if_else.py"></div>
+<div class="code-loader" data-file="anleitungen/02_kontrollstrukturen/01_if_else.py"></div>
 
 ### Schleifen (for/while)
 
-<div class="code-loader" data-file="02_kontrollstrukturen/02_schleifen.py"></div>
+<div class="code-loader" data-file="anleitungen/02_kontrollstrukturen/02_schleifen.py"></div>
 
 ### List Comprehensions
 
-<div class="code-loader" data-file="02_kontrollstrukturen/03_listen_comprehension.py"></div>
+<div class="code-loader" data-file="anleitungen/02_kontrollstrukturen/03_listen_comprehension.py"></div>
 
 ## Zusammenfassung
 

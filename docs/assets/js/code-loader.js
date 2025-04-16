@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
  * @param {HTMLElement} targetElement - Element, in dem der Code angezeigt werden soll
  */
 function loadPythonFile(filePath, targetElement) {
-    // Korrigierter Pfad: Wir müssen eine Ebene höher gehen, da der Server im docs-Verzeichnis läuft
-    fetch(`../${filePath}`)
+    // Korrigierter Pfad: Die Dateien befinden sich jetzt im Verzeichnis /py/anleitungen/
+    fetch(`/py/anleitungen/${filePath}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Fehler beim Laden der Datei: ${response.status}`);

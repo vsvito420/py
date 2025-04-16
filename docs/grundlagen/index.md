@@ -21,25 +21,25 @@ Hier kannst du die originalen Python-Dateien direkt auf der Website anschauen un
 
 ### Variablen und Datentypen
 
-<div class="code-loader" data-file="01_grundlagen/01_variablen.py"></div>
+<div class="code-loader" data-file="anleitungen/01_grundlagen/01_variablen.py"></div>
 
 ### Datentypen im Detail
 
-<div class="code-loader" data-file="01_grundlagen/02_datentypen.py"></div>
+<div class="code-loader" data-file="anleitungen/01_grundlagen/02_datentypen.py"></div>
 
 ### Operatoren
 
-<div class="code-loader" data-file="01_grundlagen/03_operatoren.py"></div>
+<div class="code-loader" data-file="anleitungen/01_grundlagen/03_operatoren.py"></div>
 
 ### Ein- und Ausgabe
 
-<div class="code-loader" data-file="01_grundlagen/04_eingabe_ausgabe.py"></div>
+<div class="code-loader" data-file="anleitungen/01_grundlagen/04_eingabe_ausgabe.py"></div>
 
 ## Übungen
 
 Nachdem du die Grundlagen gelernt hast, kannst du die folgenden Übungen ausprobieren:
 
-<div class="code-loader" data-file="übungen/übung_01.py"></div>
+<div class="code-loader" data-file="anleitungen/übungen/übung_01.py"></div>
 
 ## Zusammenfassung
 

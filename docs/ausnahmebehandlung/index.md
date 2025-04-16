@@ -18,7 +18,7 @@ Hier kannst du die originalen Python-Dateien direkt auf der Website anschauen un
 
 ### Try/Except
 
-<div class="code-loader" data-file="08_ausnahmebehandlung/01_try_except.py"></div>
+<div class="code-loader" data-file="anleitungen/08_ausnahmebehandlung/01_try_except.py"></div>
 
 ## Zusammenfassung
 

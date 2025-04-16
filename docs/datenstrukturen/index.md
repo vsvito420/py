@@ -21,19 +21,19 @@ Hier kannst du die originalen Python-Dateien direkt auf der Website anschauen un
 
 ### Listen
 
-<div class="code-loader" data-file="04_datenstrukturen/01_listen.py"></div>
+<div class="code-loader" data-file="anleitungen/04_datenstrukturen/01_listen.py"></div>
 
 ### Dictionaries
 
-<div class="code-loader" data-file="04_datenstrukturen/02_dictionaries.py"></div>
+<div class="code-loader" data-file="anleitungen/04_datenstrukturen/02_dictionaries.py"></div>
 
 ### Sets
 
-<div class="code-loader" data-file="04_datenstrukturen/03_sets.py"></div>
+<div class="code-loader" data-file="anleitungen/04_datenstrukturen/03_sets.py"></div>
 
 ### Tuples
 
-<div class="code-loader" data-file="04_datenstrukturen/04_tuples.py"></div>
+<div class="code-loader" data-file="anleitungen/04_datenstrukturen/04_tuples.py"></div>
 
 ## Zusammenfassung
 
