@@ -1,4 +1,6 @@
-# Projekte in Python
+# Modul 9: Projekte in Python
+
+[&larr; Modul 8: Ausnahmebehandlung](../08_ausnahmebehandlung/README.md) | [Zurück zur Übersicht](../README.md)
 
 Dieses Modul enthält praktische Projekte, die das Gelernte aus den vorherigen Modulen anwenden und vertiefen.
 
@@ -83,3 +85,17 @@ Durch die Arbeit an diesen Projekten solltest du:
 - [Python Testing with pytest](https://docs.pytest.org/en/latest/)
 - [Python Project Structure](https://docs.python-guide.org/writing/structure/)
 - [GitHub Student Developer Pack](https://education.github.com/pack) (für kostenlose Entwicklertools)
+
+## Übungen
+
+Nach dem Durcharbeiten der Beispiele solltest du die Übungen im Ordner `übungen` lösen:
+- [übung_08.py](../übungen/übung_08.py) - Praxisprojekt
+
+## Weiterführende Themen
+
+- Alle vorherigen Module werden in Projekten angewendet und vertieft
+- [Externe Bibliotheken und Frameworks](https://pypi.org/) - Erweiterung der eigenen Projekte
+
+---
+
+[&larr; Modul 8: Ausnahmebehandlung](../08_ausnahmebehandlung/README.md) | [Zurück zur Übersicht](../README.md)

@@ -1,5 +1,7 @@
 # Modul 2: Kontrollstrukturen
 
+[&larr; Modul 1: Grundlagen](../01_grundlagen/README.md) | [Zurück zur Übersicht](../README.md) | [Modul 3: Funktionen &rarr;](../03_funktionen/README.md)
+
 In diesem Modul lernst du die Kontrollstrukturen in Python kennen und wie sie sich von C++ unterscheiden.
 
 ## Lernziele
@@ -11,9 +13,9 @@ In diesem Modul lernst du die Kontrollstrukturen in Python kennen und wie sie si
 
 ## Dateien in diesem Modul
 
-1. `01_if_else.py` - Bedingte Anweisungen
-2. `02_schleifen.py` - For- und While-Schleifen
-3. `03_listen_comprehension.py` - List Comprehensions und Generator Expressions
+1. [01_if_else.py](01_if_else.py) - Bedingte Anweisungen
+2. [02_schleifen.py](02_schleifen.py) - For- und While-Schleifen
+3. [03_listen_comprehension.py](03_listen_comprehension.py) - List Comprehensions und Generator Expressions
 
 ## Wichtige Unterschiede zu C++
 
@@ -30,4 +32,14 @@ In diesem Modul lernst du die Kontrollstrukturen in Python kennen und wie sie si
 ## Übungen
 
 Nach dem Durcharbeiten der Beispiele solltest du die Übungen im Ordner `übungen` lösen:
-- `übung_02.py` - Kontrollstrukturen und Schleifen
+- [übung_02.py](../übungen/übung_02.py) - Kontrollstrukturen und Schleifen
+
+## Weiterführende Themen
+
+- [Funktionen](../03_funktionen/README.md) - Funktionsdefinitionen und -aufrufe
+- [List Comprehensions in Datenstrukturen](../04_datenstrukturen/01_listen.py) - Erweiterte Anwendung von List Comprehensions
+- [Schleifen mit Dateien](../07_dateien/01_lesen_schreiben.py) - Dateien zeilenweise durchlaufen
+
+---
+
+[&larr; Modul 1: Grundlagen](../01_grundlagen/README.md) | [Zurück zur Übersicht](../README.md) | [Modul 3: Funktionen &rarr;](../03_funktionen/README.md)

@@ -1,4 +1,6 @@
-# Ausnahmebehandlung in Python
+# Modul 8: Ausnahmebehandlung in Python
+
+[&larr; Modul 7: Dateien](../07_dateien/README.md) | [Zurück zur Übersicht](../README.md) | [Modul 9: Projekte &rarr;](../09_projekte/README.md)
 
 Dieses Modul behandelt die Ausnahmebehandlung (Exception Handling) in Python und vergleicht sie mit C++.
 
@@ -38,8 +40,23 @@ Nach Abschluss dieses Moduls solltest du:
 - Die Unterschiede zwischen Python und C++ in Bezug auf Ausnahmebehandlung verstehen
 - Best Practices für die Ausnahmebehandlung anwenden können
 
+## Übungen
+
+Nach dem Durcharbeiten der Beispiele solltest du die Übungen im Ordner `übungen` lösen:
+- [übung_07.py](../übungen/übung_07.py) - Ausnahmebehandlung und Dateien
+
+## Weiterführende Themen
+
+- [Dateien](../07_dateien/01_lesen_schreiben.py) - Fehlerbehandlung bei Dateioperationen
+- [Objektorientierung](../05_objektorientierung/02_vererbung.py) - Eigene Ausnahmeklassen definieren
+- [Projekte](../09_projekte/README.md) - Robuste Fehlerbehandlung in größeren Anwendungen
+
 ## Weiterführende Ressourcen
 
 - [Python Dokumentation zu Ausnahmen](https://docs.python.org/3/tutorial/errors.html)
 - [Python Built-in Exceptions](https://docs.python.org/3/library/exceptions.html)
 - [Python with-Statement und Context Manager](https://docs.python.org/3/reference/compound_stmts.html#with)
+
+---
+
+[&larr; Modul 7: Dateien](../07_dateien/README.md) | [Zurück zur Übersicht](../README.md) | [Modul 9: Projekte &rarr;](../09_projekte/README.md)

@@ -1,5 +1,7 @@
 # Modul 4: Datenstrukturen
 
+[&larr; Modul 3: Funktionen](../03_funktionen/README.md) | [Zurück zur Übersicht](../README.md) | [Modul 5: Objektorientierung &rarr;](../05_objektorientierung/README.md)
+
 In diesem Modul lernst du die wichtigsten Datenstrukturen in Python kennen und wie sie sich von C++ unterscheiden.
 
 ## Lernziele
@@ -13,10 +15,10 @@ In diesem Modul lernst du die wichtigsten Datenstrukturen in Python kennen und w
 
 ## Dateien in diesem Modul
 
-1. `01_listen.py` - Listen und ihre Methoden
-2. `02_dictionaries.py` - Dictionaries und ihre Anwendungen
-3. `03_sets.py` - Sets und Mengenoperationen
-4. `04_tuples.py` - Tuples und ihre Besonderheiten
+1. [01_listen.py](01_listen.py) - Listen und ihre Methoden
+2. [02_dictionaries.py](02_dictionaries.py) - Dictionaries und ihre Anwendungen
+3. [03_sets.py](03_sets.py) - Sets und Mengenoperationen
+4. [04_tuples.py](04_tuples.py) - Tuples und ihre Besonderheiten
 
 ## Wichtige Unterschiede zu C++
 
@@ -33,4 +35,14 @@ In diesem Modul lernst du die wichtigsten Datenstrukturen in Python kennen und w
 ## Übungen
 
 Nach dem Durcharbeiten der Beispiele solltest du die Übungen im Ordner `übungen` lösen:
-- `übung_04.py` - Datenstrukturen und ihre Anwendungen
+- [übung_04.py](../übungen/übung_04.py) - Datenstrukturen und ihre Anwendungen
+
+## Weiterführende Themen
+
+- [List Comprehensions](../02_kontrollstrukturen/03_listen_comprehension.py) - Effiziente Erstellung von Listen
+- [Objektorientierung](../05_objektorientierung/01_klassen.py) - Eigene Datenstrukturen mit Klassen erstellen
+- [Dateien lesen und schreiben](../07_dateien/01_lesen_schreiben.py) - Datenstrukturen speichern und laden
+
+---
+
+[&larr; Modul 3: Funktionen](../03_funktionen/README.md) | [Zurück zur Übersicht](../README.md) | [Modul 5: Objektorientierung &rarr;](../05_objektorientierung/README.md)

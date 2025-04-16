@@ -1,4 +1,6 @@
-# Objektorientierte Programmierung in Python
+# Modul 5: Objektorientierte Programmierung in Python
+
+[&larr; Modul 4: Datenstrukturen](../04_datenstrukturen/README.md) | [Zurück zur Übersicht](../README.md) | [Modul 6: Module und Pakete &rarr;](../06_module_und_pakete/README.md)
 
 Dieses Modul behandelt die Grundlagen der objektorientierten Programmierung (OOP) in Python und vergleicht sie mit C++.
 
@@ -46,8 +48,23 @@ Nach Abschluss dieses Moduls solltest du:
 - Die speziellen Methoden (Dunder-Methoden) in Python verstehen und nutzen können
 - Abstrakte Klassen und Interfaces in Python implementieren können
 
+## Übungen
+
+Nach dem Durcharbeiten der Beispiele solltest du die Übungen im Ordner `übungen` lösen:
+- [übung_05.py](../übungen/übung_05.py) - Objektorientierte Programmierung
+
+## Weiterführende Themen
+
+- [Datenstrukturen](../04_datenstrukturen/README.md) - Grundlage für eigene Klassen
+- [Module und Pakete](../06_module_und_pakete/01_eigene_module.py) - Organisation von Klassen in Modulen
+- [Ausnahmebehandlung](../08_ausnahmebehandlung/01_try_except.py) - Eigene Ausnahmen definieren
+
 ## Weiterführende Ressourcen
 
 - [Python Dokumentation zu Klassen](https://docs.python.org/3/tutorial/classes.html)
 - [Python Dunder-Methoden](https://docs.python.org/3/reference/datamodel.html#special-method-names)
 - [Abstract Base Classes (abc)](https://docs.python.org/3/library/abc.html)
+
+---
+
+[&larr; Modul 4: Datenstrukturen](../04_datenstrukturen/README.md) | [Zurück zur Übersicht](../README.md) | [Modul 6: Module und Pakete &rarr;](../06_module_und_pakete/README.md)

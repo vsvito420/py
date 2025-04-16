@@ -1,5 +1,7 @@
 # Modul 3: Funktionen
 
+[&larr; Modul 2: Kontrollstrukturen](../02_kontrollstrukturen/README.md) | [Zurück zur Übersicht](../README.md) | [Modul 4: Datenstrukturen &rarr;](../04_datenstrukturen/README.md)
+
 In diesem Modul lernst du, wie Funktionen in Python definiert und verwendet werden und wie sie sich von C++ unterscheiden.
 
 ## Lernziele
@@ -13,9 +15,9 @@ In diesem Modul lernst du, wie Funktionen in Python definiert und verwendet werd
 
 ## Dateien in diesem Modul
 
-1. `01_funktionen_grundlagen.py` - Grundlagen der Funktionsdefinition und -verwendung
-2. `02_parameter.py` - Verschiedene Arten von Parametern und Argumenten
-3. `03_rekursion.py` - Rekursive Funktionen und ihre Anwendungen
+1. [01_funktionen_grundlagen.py](01_funktionen_grundlagen.py) - Grundlagen der Funktionsdefinition und -verwendung
+2. [02_parameter.py](02_parameter.py) - Verschiedene Arten von Parametern und Argumenten
+3. [03_rekursion.py](03_rekursion.py) - Rekursive Funktionen und ihre Anwendungen
 
 ## Wichtige Unterschiede zu C++
 
@@ -31,4 +33,14 @@ In diesem Modul lernst du, wie Funktionen in Python definiert und verwendet werd
 ## Übungen
 
 Nach dem Durcharbeiten der Beispiele solltest du die Übungen im Ordner `übungen` lösen:
-- `übung_03.py` - Funktionen und Parameter
+- [übung_03.py](../übungen/übung_03.py) - Funktionen und Parameter
+
+## Weiterführende Themen
+
+- [Objektorientierung](../05_objektorientierung/01_klassen.py) - Methoden in Klassen
+- [Eigene Module](../06_module_und_pakete/01_eigene_module.py) - Funktionen in Modulen organisieren
+- [Funktionen höherer Ordnung](../06_module_und_pakete/02_standard_bibliothek.py) - Funktionen wie map, filter und reduce
+
+---
+
+[&larr; Modul 2: Kontrollstrukturen](../02_kontrollstrukturen/README.md) | [Zurück zur Übersicht](../README.md) | [Modul 4: Datenstrukturen &rarr;](../04_datenstrukturen/README.md)

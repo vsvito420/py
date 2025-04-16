@@ -1,4 +1,6 @@
-# Module und Pakete in Python
+# Modul 6: Module und Pakete in Python
+
+[&larr; Modul 5: Objektorientierung](../05_objektorientierung/README.md) | [Zurück zur Übersicht](../README.md) | [Modul 7: Dateien &rarr;](../07_dateien/README.md)
 
 Dieses Modul behandelt die Verwendung und Erstellung von Modulen und Paketen in Python und vergleicht sie mit C++.
 
@@ -42,8 +44,23 @@ Nach Abschluss dieses Moduls solltest du:
 - Die wichtigsten Module der Python-Standardbibliothek kennen
 - Die Unterschiede zwischen Python und C++ in Bezug auf Modularisierung verstehen
 
+## Übungen
+
+Nach dem Durcharbeiten der Beispiele solltest du die Übungen im Ordner `übungen` lösen:
+- [übung_06.py](../übungen/übung_06.py) - Module und Pakete
+
+## Weiterführende Themen
+
+- [Objektorientierung](../05_objektorientierung/README.md) - Organisation von Klassen in Modulen
+- [Dateien](../07_dateien/01_lesen_schreiben.py) - Arbeiten mit externen Daten
+- [Projekte](../09_projekte/README.md) - Strukturierung größerer Anwendungen
+
 ## Weiterführende Ressourcen
 
 - [Python Module und Pakete](https://docs.python.org/3/tutorial/modules.html)
 - [Python Standard Library](https://docs.python.org/3/library/index.html)
 - [Python Package Index (PyPI)](https://pypi.org/)
+
+---
+
+[&larr; Modul 5: Objektorientierung](../05_objektorientierung/README.md) | [Zurück zur Übersicht](../README.md) | [Modul 7: Dateien &rarr;](../07_dateien/README.md)

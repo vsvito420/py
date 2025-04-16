@@ -1,5 +1,7 @@
 # Python-Übungen
 
+[Zurück zur Übersicht](../README.md)
+
 In diesem Ordner findest du Übungsaufgaben zu den verschiedenen Modulen des Python-Kurses. Die Übungen sind so gestaltet, dass sie das Gelernte aus den jeweiligen Modulen anwenden und vertiefen.
 
 ## Struktur
@@ -17,14 +19,14 @@ In diesem Ordner findest du Übungsaufgaben zu den verschiedenen Modulen des Pyt
 
 ## Übersicht der Übungen
 
-- **übung_01.py**: Grundlagen (Variablen, Datentypen, Operatoren, Ein-/Ausgabe)
-- **übung_02.py**: Kontrollstrukturen (if/else, Schleifen, List Comprehensions)
-- **übung_03.py**: Funktionen (Definition, Parameter, Rekursion)
-- **übung_04.py**: Datenstrukturen (Listen, Dictionaries, Sets, Tuples)
-- **übung_05.py**: Objektorientierung (Klassen, Vererbung)
-- **übung_06.py**: Module und Pakete
-- **übung_07.py**: Dateien und Ausnahmebehandlung
-- **übung_08.py**: Praxisprojekt
+- [**übung_01.py**](übung_01.py): [Grundlagen](../01_grundlagen/README.md) (Variablen, Datentypen, Operatoren, Ein-/Ausgabe)
+- [**übung_02.py**](übung_02.py): [Kontrollstrukturen](../02_kontrollstrukturen/README.md) (if/else, Schleifen, List Comprehensions)
+- [**übung_03.py**](übung_03.py): [Funktionen](../03_funktionen/README.md) (Definition, Parameter, Rekursion)
+- [**übung_04.py**](übung_04.py): [Datenstrukturen](../04_datenstrukturen/README.md) (Listen, Dictionaries, Sets, Tuples)
+- [**übung_05.py**](übung_05.py): [Objektorientierung](../05_objektorientierung/README.md) (Klassen, Vererbung)
+- [**übung_06.py**](übung_06.py): [Module und Pakete](../06_module_und_pakete/README.md)
+- [**übung_07.py**](übung_07.py): [Dateien](../07_dateien/README.md) und [Ausnahmebehandlung](../08_ausnahmebehandlung/README.md)
+- [**übung_08.py**](übung_08.py): [Praxisprojekt](../09_projekte/README.md)
 
 ## Tipps
 
@@ -32,3 +34,7 @@ In diesem Ordner findest du Übungsaufgaben zu den verschiedenen Modulen des Pyt
 - Wenn du nicht weiterkommst, schau dir die entsprechenden Beispieldateien im Kursordner an
 - Die Musterlösungen sind nur ein möglicher Lösungsweg - es gibt oft mehrere richtige Lösungen
 - Versuche, die Aufgaben selbstständig zu lösen, bevor du in die Musterlösungen schaust
+
+---
+
+[Zurück zur Übersicht](../README.md)
