@@ -1,0 +1,20 @@
+<!-- PyScript-Komponente -->
+<py-config>
+    packages = []
+    {% if include.packages %}
+    packages = [{% for package in include.packages %}"{{ package }}"{% unless forloop.last %}, {% endunless %}{% endfor %}]
+    {% endif %}
+</py-config>
+
+{% if include.type == "example" %}
+<div class="pyscript-example">
+    <h4>{{ include.title }}</h4>
+    <py-repl id="{{ include.id | default: 'example' }}">{{ include.code }}</py-repl>
+</div>
+{% elsif include.type == "exercise" %}
+<div class="pyscript-exercise">
+    <h4>{{ include.title }}</h4>
+    <p>{{ include.description }}</p>
+    <py-repl id="{{ include.id | default: 'exercise' }}">{{ include.code }}</py-repl>
+</div>
+{% endif %}

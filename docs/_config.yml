@@ -1,0 +1,37 @@
+# GitHub Pages Konfiguration
+theme: jekyll-theme-cayman
+title: Python-Kurs für C++ Programmierer
+description: Ein interaktiver Python-Kurs mit PyScript-Integration
+show_downloads: false
+google_analytics:
+
+# GitHub-Informationen
+github_username: vsvito420
+
+# Markdown-Einstellungen
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+
+# Ausgeschlossene Dateien
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+
+# Standardlayout
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"

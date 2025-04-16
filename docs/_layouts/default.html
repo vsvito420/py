@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    
+    <!-- PyScript CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/pyscript.css" />
+    
+    <!-- PyScript JS -->
+    <script defer src="https://pyscript.net/releases/2025.3.1/pyscript.js"></script>
+    
+    <!-- Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    
+    <!-- Eigenes CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    
+    <!-- Eigenes JavaScript -->
+    <script defer src="{{ '/assets/js/pyscript-helper.js' | relative_url }}"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="wrapper">
+                <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+                <nav class="site-nav">
+                    <a href="{{ '/' | relative_url }}">Startseite</a>
+                    <a href="{{ '/grundlagen/' | relative_url }}">Grundlagen</a>
+                    <a href="{{ '/kontrollstrukturen/' | relative_url }}">Kontrollstrukturen</a>
+                    <a href="{{ '/funktionen/' | relative_url }}">Funktionen</a>
+                    <a href="{{ '/datenstrukturen/' | relative_url }}">Datenstrukturen</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="page-content">
+            <div class="wrapper">
+                <h1 class="page-title">{{ page.title }}</h1>
+                {{ content }}
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="wrapper">
+                <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+                <p>
+                    <a href="https://github.com/{{ site.github_username }}/py">GitHub Repository</a> |
+                    <a href="https://pyscript.net/">PyScript</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

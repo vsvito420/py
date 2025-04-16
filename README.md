@@ -1,6 +1,6 @@
-# Python-Kurs für C++ Programmierer
+# Python-Kurs für C++ Programmierer mit PyScript
 
-Willkommen zum Python-Kurs! Dieser Kurs ist speziell für Lernende mit C++-Vorkenntnissen konzipiert und führt schrittweise in die Python-Programmierung ein.
+Willkommen zum Python-Kurs! Dieser Kurs ist speziell für Lernende mit C++-Vorkenntnissen konzipiert und führt schrittweise in die Python-Programmierung ein. Das Besondere an diesem Kurs ist die Integration von **PyScript**, wodurch Python-Code direkt im Browser ausgeführt werden kann.
 
 ## Kursstruktur
 
@@ -16,99 +16,129 @@ Der Kurs ist in folgende Module unterteilt:
 8. [**Ausnahmebehandlung**](08_ausnahmebehandlung/README.md): Try/Except
 9. [**Projekte**](09_projekte/README.md): Praktische Anwendungen
 
-## Schnellzugriff auf wichtige Themen
+## Neues Feature: Interaktive Python-Umgebung mit PyScript
 
-### Grundlagen
-- [Variablen](01_grundlagen/01_variablen.py)
-- [Datentypen](01_grundlagen/02_datentypen.py)
-  - [Typannotationen (Type Hints)](01_grundlagen/02_datentypen.py#L177-L230)
-- [Operatoren](01_grundlagen/03_operatoren.py)
-- [Ein-/Ausgabe](01_grundlagen/04_eingabe_ausgabe.py)
+Dieser Kurs enthält jetzt eine interaktive Webversion mit PyScript-Integration, die es ermöglicht, Python-Code direkt im Browser auszuführen. Die Webversion ist unter [GitHub Pages](https://dein-username.github.io/py/) verfügbar.
 
-### Kontrollstrukturen
-- [If/Else](02_kontrollstrukturen/01_if_else.py)
-- [Schleifen](02_kontrollstrukturen/02_schleifen.py)
-- [List Comprehensions](02_kontrollstrukturen/03_listen_comprehension.py)
+### Vorteile der PyScript-Integration:
 
-### Funktionen
-- [Funktionsgrundlagen](03_funktionen/01_funktionen_grundlagen.py)
-- [Parameter](03_funktionen/02_parameter.py)
-- [Rekursion](03_funktionen/03_rekursion.py)
+- Schüler können Python-Code direkt im Browser ausführen, ohne Installation
+- Interaktive Beispiele und Übungen mit sofortigem Feedback
+- Nahtlose Integration von Erklärungen und ausführbarem Code
+- Zugänglich von jedem Gerät mit einem modernen Webbrowser
 
-### Datenstrukturen
-- [Listen](04_datenstrukturen/01_listen.py)
-- [Dictionaries](04_datenstrukturen/02_dictionaries.py)
-- [Sets](04_datenstrukturen/03_sets.py)
-- [Tuples](04_datenstrukturen/04_tuples.py)
+## Einrichtung der GitHub Pages-Website
 
-### Objektorientierung
-- [Klassen](05_objektorientierung/01_klassen.py)
-- [Vererbung](05_objektorientierung/02_vererbung.py)
+Um die interaktive Webversion des Kurses einzurichten:
 
-### Module und Pakete
-- [Eigene Module](06_module_und_pakete/01_eigene_module.py)
-- [Standardbibliothek](06_module_und_pakete/02_standard_bibliothek.py)
+1. Stelle sicher, dass dein Repository öffentlich ist
+2. Gehe zu den Repository-Einstellungen > Pages
+3. Wähle als Source "Deploy from a branch"
+4. Wähle den Branch "main" und den Ordner "/docs"
+5. Klicke auf "Save"
 
-### Dateien und Ausnahmebehandlung
-- [Dateien lesen und schreiben](07_dateien/01_lesen_schreiben.py)
-- [Try/Except](08_ausnahmebehandlung/01_try_except.py)
+Die Website wird unter `https://dein-username.github.io/py/` verfügbar sein.
 
-### Übungen
-- [Übungsaufgaben](übungen/README.md)
+## Hinzufügen weiterer interaktiver Module
 
-## Einrichtung der Entwicklungsumgebung
+Um weitere Module zur interaktiven Webversion hinzuzufügen:
 
-### Installation von Python
+1. Kopiere die Vorlage aus `docs/grundlagen/index.html`
+2. Erstelle einen neuen Ordner für das Modul in `docs/` (z.B. `docs/kontrollstrukturen/`)
+3. Passe den Inhalt an das jeweilige Modul an
+4. Füge interaktive Python-Beispiele mit PyScript hinzu
+5. Aktualisiere die Links in der Hauptseite (`docs/index.md`)
 
-1. Lade Python von [python.org](https://www.python.org/downloads/) herunter
-2. Installiere Python mit der Option "Add Python to PATH"
-3. Überprüfe die Installation mit `python --version` im Terminal
+## Lokale Entwicklung
 
-### Virtuelle Umgebung einrichten
+### Voraussetzungen
 
-```bash
-# Erstellen der virtuellen Umgebung
-python -m venv .venv
+- Python 3.8 oder höher
+- Git
+- Visual Studio Code (empfohlen)
 
-# Aktivieren der Umgebung
-# Windows:
-.venv\Scripts\activate
-# macOS/Linux:
-source .venv/bin/activate
+### Einrichtung
 
-# Installation der benötigten Pakete
-pip install -r requirements.txt
-```
+1. Klone das Repository:
+   ```bash
+   git clone https://github.com/dein-username/py.git
+   cd py
+   ```
 
-### Empfohlene VSCode-Erweiterungen
+2. Erstelle eine virtuelle Umgebung:
+   ```bash
+   python -m venv .venv
+   
+   # Windows:
+   .venv\Scripts\activate
+   # macOS/Linux:
+   source .venv/bin/activate
+   ```
+
+3. Installiere die benötigten Pakete:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Lokales Testen der GitHub Pages-Website
+
+Um die GitHub Pages-Website lokal zu testen:
+
+1. Installiere Jekyll (benötigt Ruby):
+   ```bash
+   gem install bundler jekyll
+   ```
+
+2. Navigiere zum docs-Verzeichnis:
+   ```bash
+   cd docs
+   ```
+
+3. Starte den lokalen Server:
+   ```bash
+   bundle exec jekyll serve
+   ```
+
+4. Öffne http://localhost:4000 in deinem Browser
+
+### Testen der PyScript-Integration
+
+Um die PyScript-Integration ohne Jekyll zu testen:
+
+1. Navigiere zum docs-Verzeichnis:
+   ```bash
+   cd docs
+   ```
+
+2. Starte einen einfachen HTTP-Server:
+   ```bash
+   # Python 3
+   python -m http.server
+   ```
+
+3. Öffne http://localhost:8000 in deinem Browser
+
+## Empfohlene VSCode-Erweiterungen
 
 - Python (Microsoft)
 - Pylint
 - Python Test Explorer
 - Python Docstring Generator
 - Python Indent
+- Jupyter
+- Live Server (für lokales Testen der HTML-Seiten)
+- Markdown All in One (für die Bearbeitung von Markdown-Dateien)
 
-## Wie man diesen Kurs nutzt
+## Beitragen
 
-1. Arbeite die Module der Reihe nach durch
-2. Jedes Modul enthält Beispielcode und Übungen
-3. Löse die Übungen selbstständig
-4. Vergleiche deine Lösungen mit den Musterlösungen im Ordner `übungen/lösungen`
-5. Wende das Gelernte in den Projekten an
+Beiträge zum Kurs sind willkommen! Wenn du Verbesserungen oder Ergänzungen vorschlagen möchtest:
 
-## Unterschiede zu C++
+1. Forke das Repository
+2. Erstelle einen Feature-Branch (`git checkout -b feature/neue-funktion`)
+3. Committe deine Änderungen (`git commit -m 'Neue Funktion hinzugefügt'`)
+4. Pushe zum Branch (`git push origin feature/neue-funktion`)
+5. Erstelle einen Pull Request
 
-Dieser Kurs hebt die wichtigsten Unterschiede zwischen Python und C++ hervor:
+## Lizenz
 
-- Python verwendet Einrückungen statt geschweifter Klammern
-- Dynamische Typisierung statt statischer Typisierung
-  - Python unterstützt jedoch optionale [Typannotationen](01_grundlagen/02_datentypen.py#L210-L230) für bessere Lesbarkeit und Toolunterstützung
-- Automatische Speicherverwaltung
-- Alles ist ein Objekt
-- Einfachere Syntax mit weniger Boilerplate-Code
-
-## Ressourcen
-
-- [Offizielle Python-Dokumentation](https://docs.python.org/de/3/)
-- [Python für C++-Programmierer](https://realpython.com/python-vs-cpp/)
-- [Python Cheat Sheet](https://www.pythoncheatsheet.org/)
+Dieses Projekt ist unter der MIT-Lizenz lizenziert - siehe die [LICENSE](LICENSE) Datei für Details.
