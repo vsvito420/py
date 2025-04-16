@@ -5,9 +5,18 @@ on:
     branches:
       - main  # oder master, je nachdem, wie dein Hauptbranch heißt
 
+# Berechtigungen für den GitHub Pages Deployment-Prozess
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   github-pages:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
