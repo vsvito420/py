@@ -8,13 +8,13 @@ Die einfachste Methode, um die Seite auf GitHub Pages zu deployen, ist die Verwe
 
 Folge diesen Schritten, um GitHub Actions zu aktivieren:
 
-1. Gehe zu deinem GitHub Repository (`https://github.com/v.skolan/py`)
+1. Gehe zu deinem GitHub Repository (`https://github.com/vsvito420/py`)
 2. Klicke auf "Settings" (Zahnrad-Symbol)
 3. Klicke im linken Menü auf "Pages"
 4. Wähle unter "Build and deployment" > "Source" die Option "GitHub Actions" aus
 5. Klicke auf "Save"
 
-Bei jedem Push in den main-Branch wird die Seite automatisch gebaut und auf GitHub Pages deployt. Die Seite wird unter `https://v.skolan.github.io/py/` verfügbar sein.
+Bei jedem Push in den main-Branch wird die Seite automatisch gebaut und auf GitHub Pages deployt. Die Seite wird unter `https://vsvito420.github.io/py/` verfügbar sein.
 
 Der Workflow führt folgende Schritte aus:
 - Checkout des Repositories
@@ -28,13 +28,13 @@ Du kannst den Status des Workflows unter dem Tab "Actions" in deinem Repository 
 
 Alternativ kannst du GitHub Pages auch manuell aktivieren:
 
-1. Gehe zu deinem GitHub Repository (`https://github.com/v.skolan/py`)
+1. Gehe zu deinem GitHub Repository (`https://github.com/vsvito420/py`)
 2. Klicke auf "Settings" (Zahnrad-Symbol)
 3. Scrolle nach unten zum Abschnitt "GitHub Pages"
 4. Wähle unter "Source" den Branch "main" und den Ordner "/docs" aus
 5. Klicke auf "Save"
 
-GitHub Pages wird nun automatisch deine Markdown-Dateien mit Jekyll verarbeiten und als HTML-Seiten bereitstellen. Die Seite wird unter `https://v.skolan.github.io/py/` verfügbar sein.
+GitHub Pages wird nun automatisch deine Markdown-Dateien mit Jekyll verarbeiten und als HTML-Seiten bereitstellen. Die Seite wird unter `https://vsvito420.github.io/py/` verfügbar sein.
 
 ## 3. Lokales Testen mit Jekyll (optional)
 
